@@ -1,0 +1,15 @@
+---
+- hosts: all
+
+  handlers:
+    - include: handlers/handlers.yml
+
+  tasks:
+    - include: tasks/_base.yml
+      vars:
+        email: michael.knobloch+coding@mailbox.org
+        name: Michael Knobloch
+        additional_gitignore: |
+          *.iml
+          .idea
+          atlassian-ide-plugin.xml
