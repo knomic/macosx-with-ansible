@@ -2,18 +2,6 @@
 
 For a description of the background of this project, see https://sandstorm.de/de/blog/ansible-mac-os-x.html
 
-## Prerequisite: Removing Boxen
-
-Make sure Boxen is not installed. In case you still have a running Boxen installation, do the following:
-
-```
-cd /opt/boxen/repo
-script/nuke --all --force
-rm ~/.profile
-```
-
-Then, *close the terminal and re-open it again.* Now, Boxen is deinstalled
-
 
 ## Prerequisite: XCode
 
@@ -26,7 +14,7 @@ Then, *close the terminal and re-open it again.* Now, Boxen is deinstalled
 If you are reading this file on your local machine, you have already done this step:
 
 ```
-git clone ssh://git@intern.sandstorm-media.de:22222/infrastructure/osx-ansible.git ~/sandstorm-ansible
+git clone https://github.com/knomic/macosx-with-ansible.git ~/sandstorm-ansible
 ```
 
 
